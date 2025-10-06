@@ -89,8 +89,10 @@ bash
 Copiar código
 streamlit run app.py
 Após isso, o sistema abrirá automaticamente no navegador (geralmente em: http://localhost:8501).
+```
 
 🧑‍💻 Autor
 Desenvolvido por Cássio Rosa
 💡 Projeto criado para fins de aprendizado e prática com Python, SQL e Streamlit.
+
 
