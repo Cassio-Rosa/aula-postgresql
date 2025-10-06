@@ -18,3 +18,12 @@ if menu == "inserir":
             st.success(f"Aluno {nome} inserido com sucesso!")
         else:
             st.warning("O campo nome pode estar vazio.")
+
+if menu == "Listar":
+    st.subheader("Listar Alunos Cadastrados")
+    alunos = cd.listar_aluno()
+    if alunos:
+        for linha in alunos:
+            st.write(f"ID: {linha[0]} | NOME: {linha[1]} | IDADE: {linha[2]}")
+    else:
+        st.warning("Nenhum aluno encontrado")
