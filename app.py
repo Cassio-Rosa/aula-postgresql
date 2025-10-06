@@ -19,7 +19,7 @@ if menu == "inserir":
         else:
             st.warning("O campo nome pode estar vazio.")
 
-if menu == "Listar":
+elif menu == "Listar":
     st.subheader("Listar Alunos Cadastrados")
     alunos = cd.listar_aluno()
     if alunos:
@@ -39,3 +39,14 @@ elif menu == "Atualizar":
             st.success("Idade atualizada com sucesso")
     else:
         st.info("Nenhum aluno disponível para atualizar")
+
+elif menu == "Deletar":
+    st.subheader("Deletar Alunos")
+    alunos = cd.listar_aluno()
+    if alunos:
+        id_aluno = st.selectbox("Escolha o ID do aluno para remover", [linha[0] for linha in alunos])
+        if st.button("Deletar"):
+            cd.deletar_aluno(id_aluno)
+            st.success("Aluno deletado com sucesso")
+    else:
+        st.info("Nenhun aluno registrado na lista")
