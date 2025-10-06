@@ -1,4 +1,4 @@
-lunos
+# 👨‍🎓 Sistema de Gerenciamento de Alunos
 
 Um sistema CRUD completo desenvolvido em **Python** com **Streamlit** e **PostgreSQL**, que permite cadastrar, listar, atualizar e deletar alunos de um banco de dados de forma prática e interativa.
 
@@ -30,10 +30,14 @@ O objetivo deste projeto é demonstrar o uso de **operações CRUD** (Create, Re
 
 ## 🗂️ Estrutura do Projeto
 
-📁 projeto_alunos/
+📁 projeto_alunos
+|
 ├── crud.py → Funções CRUD (criar, listar, atualizar, deletar)
+|
 ├── app.py → Interface principal com Streamlit
+|
 ├── db.py → Configuração e conexão com o banco de dados
+|
 └── README.md → Documentação do projeto
 
 yaml
@@ -89,3 +93,4 @@ Após isso, o sistema abrirá automaticamente no navegador (geralmente em: http:
 🧑‍💻 Autor
 Desenvolvido por Cássio Rosa
 💡 Projeto criado para fins de aprendizado e prática com Python, SQL e Streamlit.
+
