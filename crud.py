@@ -53,7 +53,7 @@ def deletar_aluno(id_aluno):
             cursor.execute(
                 "DELETE FROM alunos WHERE id = %s",
                 (id_aluno,)
-
+                
                 )
             conexao.commit()
 
@@ -62,5 +62,3 @@ def deletar_aluno(id_aluno):
         finally:
             cursor.close()
             conexao.close()
-
-
